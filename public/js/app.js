@@ -1,0 +1,1 @@
+angular.module('simpleApp', ['ngRoute', 'appRoutes', 'MainCtrl']);
