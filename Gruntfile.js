@@ -70,7 +70,14 @@ module.exports = function(grunt) {
         files: ['public/src/js/**/*.js'],
         tasks: ['jshint', 'uglify']
       }
-    }
+    },
+    
+  	concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      tasks: ['nodemon', 'watch']
+    }   
     
     
   });
